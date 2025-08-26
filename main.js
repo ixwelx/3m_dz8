@@ -2,7 +2,7 @@ const createBtn = document.querySelector(".create-btn");
 const list = document.querySelector(".todo-list");
 const input = document.querySelector("input");
 
-let task = JSON.parse(localStorage.getItem("task"));
+let task = JSON.parse(localStorage.getItem("task")) || [];
 
 function showTasks() {
     list.innerHTML = "";
